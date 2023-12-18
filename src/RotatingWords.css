@@ -1,0 +1,64 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+.outer-headings {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('/Users/robbymanihani/Documents/Personal Website/personal-website/imgs/home_circles.png');
+  background-position: center;
+  background-size: cover;
+}
+
+h1 { 
+  color: white; 
+  background: transparent;
+  font-size: 80px; 
+  position: relative;
+  left: -300px;
+}
+
+.inner-headings {
+  height: 80px; 
+  line-height: 90px;
+  font-size: 80px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+
+.inner-headings span {
+  position: relative; 
+  color: rgb(255, 41, 41); 
+  background: transparent;
+  animation: animation 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite; /* Smooth easing */
+}
+
+@keyframes animation { 
+  0%, 100% { 
+    top: 0; 
+    transform: scale(1);
+  }
+  5%, 30% { 
+    transform: scale(1.05); /* Very subtle bounce effect */
+  }
+  33.33% { 
+    top: -100px; /* Adjusted for larger text */
+  }
+  38.33%, 63.33% { 
+    transform: scale(1.05); /* Very subtle bounce effect */
+  }
+  66.66% { 
+    top: -200px; /* Adjusted for larger text */
+  }
+  71.66%, 96.66% {
+    transform: scale(1.05); /* Very subtle bounce effect */
+  }
+}
+
+
