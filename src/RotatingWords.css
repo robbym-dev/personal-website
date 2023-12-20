@@ -7,20 +7,28 @@
 .outer-headings {
   height: 100vh;
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
-  background-image: url('/Users/robbymanihani/Documents/Personal Website/personal-website/imgs/home_circles.png');
-  background-position: center;
-  background-size: cover;
+  justify-content: center;
+  align-items: center; /* Vertically center the items */
+  text-align: left;
 }
 
 h1 { 
   color: white; 
   background: transparent;
   font-size: 80px; 
-  position: relative;
-  left: -300px;
+  margin-right: 175px; /* Adjust the space between text and image */
+  margin-bottom: 100px;
+  padding-left: 80px;
+}
+
+.image-container {
+  width: 600px;
+  height: 600px;
+  background-image: url('/Users/robbymanihani/Documents/Personal Website/personal-website/src/light-bulb.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-top: 10px; */ /* Adjust this as needed to align with the text */
 }
 
 .inner-headings {

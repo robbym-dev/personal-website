@@ -1,11 +1,17 @@
-// TopBar.js
 import React from 'react';
+import './TopBar.css';
 
 const TopBar = () => {
   return (
-    <div className="top-bar">
-      {/* Add your content for the top bar here */}
-    </div>
+    <nav className="nav">
+      <div src="./name-logo.png" alt="Logo" className="logo"></div> 
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   );
 };
 
