@@ -10,7 +10,7 @@
   .logo {
     width: 120px; /* Adjust as per your logo's aspect ratio */
     height: 120px; /* Adjust as per your logo's aspect ratio */
-    background-image: url('/Users/robbymanihani/Documents/Personal Website/personal-website/assets/Coconut Cosmetics Logo (2).png'); /* Path to your logo */
+    background-image: url('./assets/name-logo.png'); /* Path to your logo */
     background-size: cover; /* Ensures the logo fits within the dimensions */
     background-repeat: no-repeat;
     background-color: transparent;

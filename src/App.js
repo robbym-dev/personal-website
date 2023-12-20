@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Home'
 
-const App = () => { /* Adding this note to make sure Github Push works */
+const App = () => { 
 
   return (
     <div className="app">

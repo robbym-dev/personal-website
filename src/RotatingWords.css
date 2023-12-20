@@ -24,7 +24,7 @@ h1 {
 .image-container {
   width: 600px;
   height: 600px;
-  background-image: url('/Users/robbymanihani/Documents/Personal Website/personal-website/src/light-bulb.jpeg');
+  background-image: url('./assets/light-bulb.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
