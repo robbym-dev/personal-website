@@ -64,3 +64,17 @@
   color: white;
   font-size: 20px;
 }
+
+.red-line {
+  height: 1.5px; /* Height of the red line */
+  background-color: #e04e4e; /* Red color */
+  width: 0; /* Line starts out as not visible */
+  transition: width 0.4s ease; /* Transition matching the top bar animation */
+  position: absolute;
+  bottom: 0; /* Position the line at the bottom of the nav */
+  left: 0;
+}
+
+.nav.scrolled .red-line {
+  width: 100%; /* Line extends to full width when scrolled */
+}

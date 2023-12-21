@@ -8,16 +8,21 @@ const TopBar = () => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       setScrolled(isScrolled);
+  
+      // Prevent scrolling above the start of the document
+      if (window.scrollY < 0) {
+        window.scrollTo(0, 0);
+      }
     };
 
     // Add event listener
-    window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // Clean up the event listener
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
@@ -28,6 +33,7 @@ const TopBar = () => {
         <li><a href="/contact">Experience</a></li>
         <li><a href="/contact" className="lets-talk-btn">Let's Talk</a></li>
       </ul>
+      <div className={`red-line ${scrolled ? 'extend' : ''}`}></div>
     </nav>
   );
 };
