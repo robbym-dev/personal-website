@@ -1,42 +1,66 @@
 /* TopBar.css */
 .nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #1A1A1D;
-    height: 60px;
-  }
-  
-  .logo {
-    width: 120px; /* Adjust as per your logo's aspect ratio */
-    height: 120px; /* Adjust as per your logo's aspect ratio */
-    background-image: url('./assets/name-logo.png'); /* Path to your logo */
-    background-size: cover; /* Ensures the logo fits within the dimensions */
-    background-repeat: no-repeat;
-    background-color: transparent;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 5px;
-  }
-  
-  
-  .nav ul {
-    list-style: none;
-    background-color: transparent;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav li {
-    margin: 0 20px;
-    background-color: transparent;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; 
+  height: 50px;
+  transition: background-color 0.4s ease;
+  position: sticky; 
+  top: 0; 
+  z-index: 2000; 
+}
+
+.nav.scrolled {
+  background-color: #1a1919; 
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background-image: url('./assets/name-logo.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-bottom: -5px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center; 
+  margin: 0;
+  padding: 0 40px 0 0;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.nav .lets-talk-btn {
+  display: inline-block;
+  padding: 8px 12px; 
+  margin: 5px 10px 5px -10px; 
+  background-color: #e04e4e; 
+  color: white;
+  border-radius: 25px; /* Pill shape */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav .lets-talk-btn:hover {
+  background-color: #cc0000; 
+}
+
+.nav li {
+  margin: 0 20px;
+  background-color: transparent;
+}
+
+.nav a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
