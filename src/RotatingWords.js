@@ -3,16 +3,17 @@ import './RotatingWords.css';
 
 const RotatingWords = () => {
   const [showArrow, setShowArrow] = useState(true);
+  const [showAboutMe, setShowAboutMe] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setShowArrow(window.scrollY <= 20);
+      setShowAboutMe(window.scrollY > 300); // Adjust as needed
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   return (
     <div className="outer-headings">
       <h1>
