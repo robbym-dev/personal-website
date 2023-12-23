@@ -12,7 +12,7 @@ const RotatingWords = () => {
       const scrollY = window.scrollY;
       setShowArrow(scrollY <= 20);
       setShowAboutMe(scrollY > 300);
-      if (scrollY > 500) { // Adjust this value for when the info should fade in
+      if (scrollY > 500) { 
         setFadeInfo(true);
       }
     };
@@ -31,7 +31,8 @@ const RotatingWords = () => {
           </div>
           <div className={`info-container ${fadeInfo ? 'fade-in' : ''}`}>
             <p>
-              I'm Robby, a passionate developer with a love for creative solutions...
+              Hey! I'm Robby, an undergraduate at Stanford studying Computer Science and Electrical Engineering. <br/>
+              
             </p>
           </div>
         </div>
