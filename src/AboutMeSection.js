@@ -32,7 +32,7 @@ const RotatingWords = () => {
           <div className={`info-container ${fadeInfo ? 'fade-in' : ''}`}>
             <p>
               Hey! I'm Robby, an undergraduate at Stanford studying Computer Science and Electrical Engineering. <br/>
-              
+            
             </p>
           </div>
         </div>
