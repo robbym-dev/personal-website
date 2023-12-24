@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from './TopBar'; 
 import RotatingWords from './RotatingWords';
-import AboutMeSection from './AboutMeSection';
 import './Home.css';
 
 const App = () => {
@@ -10,7 +9,6 @@ const App = () => {
     <div className="app">
       <TopBar />
       <RotatingWords/>
-      <AboutMeSection />
     </div>
   );
 };

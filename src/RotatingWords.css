@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind everything else */
+}
+
+.about-me-section {
+  color: white; /* Adjust text color as needed */
+  padding: 50px; /* Add padding around your content */
+  /* Add any other styling needed for this section */
+}
+
+.background-image-container {
+  width: 1100px; /* Set the width of the image */
+  height: 600px; /* Set the height of the image */
+  margin-left: 300px;
+  background-image: url('./assets/square-home-wallpaper.png'); /* Path to your image */
+  background-size: cover; /* Cover the entire container area */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  /* Add more styling as needed, like margins or alignment */
+}
+
 .outer-headings {
   height: 100vh;
   display: flex;
@@ -22,6 +48,42 @@ h1 {
   z-index: 10000;
 }
 
+h2 { 
+  font-size: 80px;
+  transform: translate(370px, -530px);
+  background-color: transparent;
+}
+
+.typing-effect {
+  display: inline-block; /* Allows the container to grow with the content */
+  border-right: 3px solid black; /* The caret */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  max-width: 740px; /* Prevents the container from growing beyond the text width */
+  animation: typing 4s steps(40, end) 1 forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; } /* Adjust width to fit your text */
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: white; }
+  50% { border-color: transparent; }
+}
+
+.highlight {
+  color: red; /* Change the color to red */
+}
+
+.about-me-text {
+  margin-left: 300px; 
+  margin-top: -450px; 
+  font-size: 25px;
+}
+
 .image-container {
   width: 600px;
   height: 600px;
@@ -31,7 +93,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1010;
-  /* margin-top: 10px; */ /* Adjust this as needed to align with the text */
 }
 
 .inner-headings {
