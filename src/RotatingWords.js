@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 
 import './RotatingWords.css';
 
@@ -32,24 +30,6 @@ const RotatingWords = () => {
 
   return (
     <div>
-
-      {/* Particles */}
-      <div className="particles-container">
-        <Particles
-          id="tsparticles"
-          options={{
-            /* particles configuration */
-          }}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: -1
-          }}
-        />
-      </div>
       {/* Landing page info */}
       <div className="outer-headings">
         <h1>

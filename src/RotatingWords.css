@@ -162,6 +162,7 @@ h2 {
   transform: translateX(-50%);
   z-index: 1001;
   animation: fadeIn 10s ease;
+  background-color: transparent;
 }
 
 .arrow-wrapper {
@@ -172,6 +173,7 @@ h2 {
   z-index: 1001;
   opacity: 1; 
   transition: opacity 1s ease; 
+  background-color: transparent;
 }
 
 
@@ -181,6 +183,7 @@ h2 {
   display: inline-block;
   padding: 10px;
   animation: bounce 2s infinite;
+  background-color: transparent;
 }
 
 @keyframes bounce {
@@ -194,6 +197,7 @@ h2 {
 
 .arrow-wrapper.hide-arrow {
   opacity: 0; 
+  background-color: transparent;
 }
 
 @keyframes fadeOutDown {
@@ -363,4 +367,16 @@ h2 {
 }
 
 
+@media (max-width: 1500px) {
+  .boxes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%; /* Adjusted width for mobile phones */
+    margin: 10px auto; /* Centering the box */
+    /* Other adjustments for mobile view */
+  }
+}
 
