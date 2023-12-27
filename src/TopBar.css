@@ -40,7 +40,7 @@
 
 .nav .lets-talk-btn {
   display: inline-block;
-  padding: 8px 12px; 
+  padding: 6px 12px; 
   margin: 5px 10px 5px -10px; 
   background-color: #e04e4e; 
   color: white;
@@ -60,6 +60,7 @@
 
 .nav a {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-decoration: none;
   background-color: transparent;
   color: white;
