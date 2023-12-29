@@ -3,36 +3,42 @@ import './TopBar.css';
 
 const TopBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       setScrolled(isScrolled);
-  
-      // Prevent scrolling above the start of the document
+
       if (window.scrollY < 0) {
         window.scrollTo(0, 0);
       }
     };
 
-    // Add event listener
-  window.addEventListener('scroll', handleScroll);
-
-  // Clean up the event listener
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="logo"></div>
-      <ul>
+      
+      <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={menuOpen ? 'open' : ''}>
+        <div className="menu-close" onClick={() => setMenuOpen(false)}>X</div>
         <li><a href="/">Introduction</a></li>
         <li><a href="/services">Projects</a></li>
         <li><a href="/contact">Experience</a></li>
         <li><a href="/contact" className="lets-talk-btn">Let's Talk</a></li>
       </ul>
+
       <div className={`red-line ${scrolled ? 'extend' : ''}`}></div>
     </nav>
   );

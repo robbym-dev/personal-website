@@ -85,7 +85,16 @@ const RotatingWords = () => {
                 <h3>Skills</h3>
               </div>
               <div className="box-back">
-                <p>Content for Box 2</p>
+                <p>
+                <ul>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+                </p>
               </div>
             </div>
           </div>

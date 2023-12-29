@@ -80,3 +80,185 @@
 .nav.scrolled .red-line {
   width: 100%; /* Line extends to full width when scrolled */
 }
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s linear;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: transparent;
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+  background-color: transparent;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+  background-color: transparent;
+}
+
+.menu-close {
+  background-color: transparent;
+  color: transparent;
+}
+
+@media (max-width: 500px) {
+  .hamburger-menu {
+    display: flex;
+    margin-right: 20px;
+    background-color: transparent;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1919;
+    position: sticky;
+    top: 0;
+    z-index: 50000;
+  }
+
+  .nav .lets-talk-btn {
+    display: inline-block;
+    padding: 6px 12px; 
+    margin: 5px 10px 5px 13px; 
+    background-color: #e04e4e; 
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav.scrolled {
+    background-color: #1a1919; /* Background change on scroll */
+  }
+
+  .nav ul {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1919;
+    transition: left 0.5s ease;
+    z-index: 50001;
+  }
+
+  /* Enhanced specificity for mobile styles */
+  .nav.scrolled, .nav.scrolled .red-line {
+    background-color: #1a1919;
+    transition: background-color 0.4s ease, width 0.4s ease;
+  }
+
+  .red-line {
+    height: 1.5px;
+    background-color: #e04e4e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially set to 0 */
+    transition: width 0.4s ease; /* Transition for the red line */
+  }
+
+
+  .nav.scrolled .red-line {
+    width: 100%; /* Width transitions to 100% when scrolled */
+  }
+
+
+  .nav ul.open {
+    left: 0; 
+  }
+
+  .nav li {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+    margin: 20px 0;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    z-index: 50002;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .nav a { 
+    font-size: 40px;
+    line-height: -10000px;
+  }
+
+
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Correct: This prevents horizontal overflow */
+  width: 100%;
+  height: auto; /* Ensure the height is auto */
+  overflow-y: auto; /* Ensure vertical scrolling is allowed */
+}
+  
+  body {
+    position: relative; /* Contain absolutely positioned elements */
+    background-color: transparent;
+  }
+  
+  /* Only apply overflow-y to the body to allow vertical scrolling */
+  body {
+    overflow-y: auto;
+    background-color: transparent;
+  }
+  
+  /* Debugging style */
+  * {
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+    background-color: transparent;
+  }
+  
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* Set the body height to 100% for proper scrolling */
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  overflow-y: auto; /* Allow vertical scrolling */
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: transparent;
+}
+}

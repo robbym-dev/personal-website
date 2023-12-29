@@ -366,17 +366,141 @@ h2 {
   color: white;
 }
 
+.box-2 p li {
+  background-color: transparent;
+}
+
 
 @media (max-width: 1500px) {
-  .boxes-container {
-    flex-direction: column;
-    align-items: center;
+  h2 { 
+    font-size: 80px;
+    transform: translate(100px, -530px);
+    background-color: transparent;
   }
 
-  .box {
-    width: 80%; /* Adjusted width for mobile phones */
-    margin: 10px auto; /* Centering the box */
-    /* Other adjustments for mobile view */
+  .background-image-container {
+    width: 1100px; 
+    height: 600px; 
+    margin-left: 60px;
+    background-image: url('./assets/square-home-wallpaper.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  .box-1 {
+    width: 300px; 
+    height: 360px; 
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+
+  .box-1 p { 
+    font-size: 20px;
+    font-weight: 500px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .box-1 h3 {
+    margin-right: 250px;
+    margin-bottom: 340px; 
+    font-size: 24px;
+    color: white;
+  }
+  .box-2 {
+    width: 500px; 
+    height: 250px; 
+    margin-top: -60px;
+    margin-left: 40px;
+  }
+  .box-2 h3 {
+    margin-right: 450px;
+    margin-bottom: 250px; 
+    font-size: 24px;
+    color: white;
+  }
+
+  .box-3 { 
+    width: 250px; 
+    height: 250px; 
+    margin-top: 125px;
+    margin-right: 175px;
+    margin-left: 40px;
+  }
+
+  .box-3 h3 {
+    margin-right: 150px;
+    margin-bottom: 240px; 
+    font-size: 24px;
+    color: white;
+  }
+}
+
+@media (max-width: 500px) { 
+  h1 { 
+    color: white; 
+    background: transparent;
+    font-size: 60px; 
+    margin-right: 175px; 
+    padding-left: 200px;
+    z-index: 10000;
+  }
+
+  .outer-headings {
+    margin-top: -180px;
+    margin-left: -30px;
+  }
+  .inner-headings {
+    height: 80px; 
+    line-height: 90px;
+    font-size: 60px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+
+  .background-image-container {
+    width: 1000px; 
+    height: 600px; 
+    margin-top: -300px;
+    margin-left: -4px;
+    background-image: url('./assets/square-home-wallpaper.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+  h2 { 
+    font-size: 60px;
+    transform: translate(-10px, -540px);
+    background-color: transparent;
+  }
+
+  .typing-effect {
+    /* Reset the animation */
+    animation: none;
+    /* Redefine the animation with mobile-specific settings */
+    animation: typing 3s steps(25, end) forwards, blink-caret 0.75s step-end infinite;
+    border-right: 3px solid white; /* Ensure the cursor is visible */
+    font-size: 20px; /* Adjust font size for mobile */
+    width: 0;
+    max-width: 300px; /* Adjust as needed for the text length */
+  }
+
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% { border-color: white; }
+    50% { border-color: transparent; }
   }
 }
 
