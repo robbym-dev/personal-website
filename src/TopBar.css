@@ -119,7 +119,7 @@
   color: transparent;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hamburger-menu {
     display: flex;
     margin-right: 20px;
@@ -225,35 +225,16 @@
   overflow-y: auto; /* Ensure vertical scrolling is allowed */
 }
   
-  body {
-    position: relative; /* Contain absolutely positioned elements */
-    background-color: transparent;
-  }
-  
-  /* Only apply overflow-y to the body to allow vertical scrolling */
-  body {
-    overflow-y: auto;
-    background-color: transparent;
-  }
-  
-  /* Debugging style */
-  * {
-    box-sizing: border-box; /* Include padding and borders in width calculations */
-    background-color: transparent;
-  }
-  
 
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%; /* Set the body height to 100% for proper scrolling */
-  overflow-x: hidden;
 }
 
 body {
   position: relative;
-  overflow-y: auto; /* Allow vertical scrolling */
   background-color: transparent;
 }
 

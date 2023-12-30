@@ -4,13 +4,78 @@
   padding: 0;
 }
 
-.particles-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.skill {
+  background: transparent;
+  margin: -10px;
+}
+
+.skills {
   width: 100%;
-  height: 100%;
-  z-index: -1; 
+  max-width: 600px;
+  padding: 0 20px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin: 20px 0;
+  background: transparent;
+}
+
+.skill-bar {
+  height: 14px;
+  border-radius: 10px;
+  margin-top: -15px;
+  background: rgba(53, 53, 53, 0.801);
+}
+
+.skill-per {
+  height: 14px;
+  background: #fff7f7;
+  border-radius: 10px;
+  position: relative;
+}
+
+.box:hover .skill-per {
+  animation: fillBars 2.5s forwards;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 10px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+  display: none;
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .about-me-section {
@@ -74,6 +139,12 @@ h2 {
 
 .highlight {
   color: red;
+}
+
+.link {
+  font-weight: 900;
+  color: black;
+  background-color: transparent;
 }
 
 .about-me-text {
@@ -448,9 +519,10 @@ h2 {
   }
 
   .outer-headings {
-    margin-top: -180px;
+    margin-top: -100px;
     margin-left: -30px;
   }
+  
   .inner-headings {
     height: 80px; 
     line-height: 90px;
@@ -478,29 +550,61 @@ h2 {
   h2 { 
     font-size: 60px;
     transform: translate(-10px, -540px);
+    margin-bottom: -500px;
     background-color: transparent;
   }
 
-  .typing-effect {
-    /* Reset the animation */
-    animation: none;
-    /* Redefine the animation with mobile-specific settings */
-    animation: typing 3s steps(25, end) forwards, blink-caret 0.75s step-end infinite;
-    border-right: 3px solid white; /* Ensure the cursor is visible */
-    font-size: 20px; /* Adjust font size for mobile */
-    width: 0;
-    max-width: 300px; /* Adjust as needed for the text length */
+  .boxes-container {
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center; /* Center-align the boxes */
   }
 
-
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  .box {
+    width: 100%; /* Adjust the width to fit the screen */
+    margin: 5px 0px; /* Add some margin for spacing and center alignment */
+    left: -10px; /* Reset any left alignment from larger screens */
+    right: 0; /* Reset any right alignment from larger screens */
   }
-  
-  @keyframes blink-caret {
-    0%, 100% { border-color: white; }
-    50% { border-color: transparent; }
+
+  .box-1 {
+    width: 350px; 
+    height: 360px; 
+  }
+
+  .box-1 p { 
+    font-size: 20px;
+    font-weight: 1200px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .box-1 h3 {
+    margin-right: 250px;
+    margin-bottom: 300px; 
+    font-size: 30px;
+    color: white;
+  }
+  .box-2 {
+    width: 350px; 
+    height: 360px; 
+  }
+  .box-2 h3 {
+    margin-right: 220px;
+    margin-bottom: 300px; 
+    font-size: 30px;
+    color: white;
+  }
+
+  .box-3 { 
+    width: 350px;  
+    height: 360px; 
+  }
+
+  .box-3 h3 {
+    margin-right: 180px;
+    margin-bottom: 300px; 
+    font-size: 30px;
+    color: white;
   }
 }
 
