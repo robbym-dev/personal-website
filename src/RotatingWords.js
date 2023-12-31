@@ -74,6 +74,7 @@ const RotatingWords = () => {
                   Computer Science student at Stanford University. My academic journey is fueled by a deep fascination
                   with Brain-Computer Interfaces (BCIs), Natural Language Processing (NLP), and Robotics.
                   Particularly, I'm drawn to the dynamic world of startups, where ideas transform into impactful realities.
+                  Check out my work here!
                 </p>
               </div>
             </div>
@@ -101,7 +102,7 @@ const RotatingWords = () => {
         <div className="skill">
           <div className="skill-name">Javascript</div>
           <div className="skill-bar">
-            <div className="skill-per" per="60%" style={{ maxWidth: "60%" }}></div>
+            <div className="skill-per" per="60%" style={{ maxWidth: "95%" }}></div>
           </div>
         </div>
         <div className="skill">
@@ -113,7 +114,7 @@ const RotatingWords = () => {
         <div className="skill">
           <div className="skill-name">React</div>
           <div className="skill-bar">
-            <div className="skill-per" per="60%" style={{ maxWidth: "60%" }}></div>
+            <div className="skill-per" per="60%" style={{ maxWidth: "80%" }}></div>
           </div>
         </div>
         <div className="skill">
@@ -134,7 +135,10 @@ const RotatingWords = () => {
                 <h3>Interests</h3>
               </div>
               <div className="box-back">
-                <p>Content for Box 3</p>
+                <p> Beyond the academic sphere, I've found a deep interest in music production and dance, specifically Bhangra.
+          I'm an enthusiast of culinary adventures, always eager to explore new restaurants.
+          Above all, I cherish the joy of meeting new people and exchanging ideas,
+          believing that every encounter is a doorway to a world of knowledge and perspectives.</p>
               </div>
             </div>
           </div>

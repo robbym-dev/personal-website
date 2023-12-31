@@ -15,6 +15,7 @@
   padding: 0 20px;
   background-color: transparent;
   margin-bottom: 20px;
+  margin-left: -20px;
 }
 
 .skill-name {
@@ -29,7 +30,7 @@
   height: 14px;
   border-radius: 10px;
   margin-top: -15px;
-  background: rgba(53, 53, 53, 0.801);
+  background: rgba(187, 187, 187, 0.801);
 }
 
 .skill-per {
@@ -424,10 +425,9 @@ h2 {
 }
 
 .box-3 p { 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500px;
   color: white;
-  margin-bottom: 70px;
 }
 
 .box-3 h3 {
