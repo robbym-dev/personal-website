@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.space1 { 
+  height: 800px;
+}
+
 .skill {
   background: transparent;
   margin: -10px;

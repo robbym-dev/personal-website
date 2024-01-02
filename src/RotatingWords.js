@@ -146,6 +146,7 @@ const RotatingWords = () => {
         {/* End of Three Boxes */}
       </div>
       {/* About Me Section */}
+      <div className = "space1"></div>
     </div>
   );
 };
