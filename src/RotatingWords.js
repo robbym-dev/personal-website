@@ -7,6 +7,7 @@ const RotatingWords = () => {
   const aboutMeRef = useRef(null);
 
   useEffect(() => {
+
     const handleScroll = () => {
       if (aboutMeRef.current) {
         const rect = aboutMeRef.current.getBoundingClientRect();
@@ -145,8 +146,18 @@ const RotatingWords = () => {
         </div>
         {/* End of Three Boxes */}
       </div>
-      {/* About Me Section */}
+      {/* What I've been up to */}
       <div className = "space1"></div>
+      <div className="about-more">
+        <div className="background-image-container2"></div>
+        <h4 className={startTyping ? 'typing-effect1' : ''}>What I've been up <span className="highlight">to</span></h4>
+        <div className ="music">
+          <i class="bi bi-music-note-list my-music-icon"></i>
+          <p>Listening to...</p>
+        </div>
+        <div className = "experiences"></div>
+      </div> 
+      <div className = "space2"></div>
     </div>
   );
 };
