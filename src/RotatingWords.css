@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0; 
@@ -190,8 +192,10 @@ h4 {
 
 .about-me-text {
   margin-left: 300px; 
-  margin-top: -450px; 
-  font-size: 25px;
+  margin-top: -480px; 
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800px !important;
 }
 
 .image-container {
@@ -386,6 +390,19 @@ h4 {
 .box-back p {
   background-color: transparent;
   color: black;
+  font-size: 14px; 
+}
+
+.box-1 .box-back p { 
+  padding-top: 30px;
+  font-style: 'Roboto', 'sans-serif';
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.box-3 .box-back p {
+
+  font-weight: 700;
 }
 
 .box-front h3 {

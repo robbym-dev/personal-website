@@ -49,14 +49,14 @@ const RotatingWords = () => {
 
       {/* About Me Section */}
       <div className="background-image-container"></div>
-      <div ref={aboutMeRef} className="about-me-section">
+      <div ref={aboutMeRef} className="about-me-section background-text">
         <h2 className={startTyping ? 'typing-effect' : ''}>A little bit about <span className="highlight">me</span></h2>
         <p className="about-me-text">
           {/* Charting a path less traveled, I find myself at the intersection of technology and innovation as a
           Computer Science student at Stanford University. My academic journey is fueled by a deep fascination
           with Brain-Computer Interfaces (BCIs), Natural Language Processing (NLP), and Robotics.
           Particularly, I'm drawn to the dynamic world of startups, where ideas transform into impactful realities.
-          Beyond the academic sphere, I've found a deep interest in music production and dance, specifically Bhangra.
+          Beyond the academic sphere, I've found a deep inter est in music production and dance, specifically Bhangra.
           I'm an enthusiast of culinary adventures, always eager to explore new restaurants.
           Above all, I cherish the joy of meeting new people and exchanging ideas,
           believing that every encounter is a doorway to a world of knowledge and perspectives. */}
@@ -71,11 +71,12 @@ const RotatingWords = () => {
               </div>
               <div className="box-back">
                 <p>
-                  Charting a path less traveled, I find myself at the intersection of technology and innovation as a
-                  Computer Science student at Stanford University. My academic journey is fueled by a deep fascination
-                  with Brain-Computer Interfaces (BCIs), Natural Language Processing (NLP), and Robotics.
-                  Particularly, I'm drawn to the dynamic world of startups, where ideas transform into impactful realities.
-                  Check out my work here!
+                  I am a first-generation student and grew up split between Los Angeles and Denver. I fell in love with 
+                  the idea of building at 9-years old when I dismantled by iPad Mini 2 with a flat-head screwdriver, my parents weren't 
+                  the happiest. But nowadays I've kept out of trouble and have
+                  been busy in ML/NLP research in the Hazy Research Lab co-advised by Christopher Re and Azalia Mirhoseini,
+                  and have been collaborating with Matei Zaharia and Christopher Potts in helping develop an Automated RAG Evaluation
+                  Framework.
                 </p>
               </div>
             </div>
@@ -136,10 +137,11 @@ const RotatingWords = () => {
                 <h3>Interests</h3>
               </div>
               <div className="box-back">
-                <p> Beyond the academic sphere, I've found a deep interest in music production and dance, specifically Bhangra.
-          I'm an enthusiast of culinary adventures, always eager to explore new restaurants.
-          Above all, I cherish the joy of meeting new people and exchanging ideas,
-          believing that every encounter is a doorway to a world of knowledge and perspectives.</p>
+                <p> Music's my life - it's always playing, no matter what I'm doing. 
+                  In my free time, I'm either tinkering with new tracks in FL 
+                  Studio or dancing Bhangra at Stanford's dance studios across campus. 
+                  Food's another passion of mine. I love checking out new restaurants and 
+                  chatting with the people I meet there. Every meal's a chance to learn something new, you know? </p>
               </div>
             </div>
           </div>
